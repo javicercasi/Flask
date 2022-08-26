@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App</title>
+</head>
+<body>
+    <h1>Hola {{ nombre }},</h1>
+    <h2>Bienvenido</h2>
+    {% if num == 1 %}
+    <h2>Es un numero 1</h2>
+    {% else %}
+    <h2>No lo es</h2>
+    {% endif %}
+
+    {% for n in lista %}
+    <h2>El numero es {{ n }}</h2>
+    {% endfor %}
+
+</body>
+</html>
