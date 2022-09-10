@@ -1,0 +1,88 @@
+from app import *
+
+google = Empresa(nombre='Google', fundacion=1998)
+microsoft = Empresa(nombre='Microsoft', fundacion=1975)
+apple = Empresa(nombre='Apple', fundacion=1975)
+amazon = Empresa(nombre='Amazon', fundacion=1999)
+ebay = Empresa(nombre='Ebay', fundacion=1997)
+facebook = Empresa(nombre='Facebook', fundacion=2004)
+twitter = Empresa(nombre='Twitter', fundacion=2009)
+yahoo = Empresa(nombre='Yahoo', fundacion=1996)
+snapchat = Empresa(nombre='Snapchat', fundacion=2012)
+instagram = Empresa(nombre='Instagram', fundacion=2010)
+
+
+
+db.session.add(google)
+db.session.add(microsoft)
+db.session.add(apple)
+db.session.add(amazon)
+db.session.add(ebay)
+db.session.add(facebook)
+db.session.add(twitter)
+db.session.add(yahoo)
+db.session.add(snapchat)
+db.session.add(instagram)
+
+
+
+java = Lenguaje(nombre='java', creador='James Gosling')
+c = Lenguaje(nombre='c', creador='Dennis Ritchie')
+python = Lenguaje(nombre='python', creador='Guido Van Rossum')
+haskell = Lenguaje(nombre='haskell')
+javascript = Lenguaje(nombre='javascript', creador='Brendan Eich')
+basic = Lenguaje(nombre='basic', creador='John G. Kemeny')
+cplusplus = Lenguaje(nombre='c++', creador='Bjarne Stroustrup')
+csharp = Lenguaje(nombre='c#')
+swift = Lenguaje(nombre='swift', creador='Chris Lattner')
+kotlin = Lenguaje(nombre='kotlin')
+
+
+
+db.session.add(java)
+db.session.add(c)
+db.session.add(python)
+db.session.add(haskell)
+db.session.add(javascript)
+db.session.add(basic)
+db.session.add(cplusplus)
+db.session.add(csharp)
+db.session.add(swift)
+db.session.add(kotlin)
+
+
+
+
+john = Programador(nombre='Jonh', edad=22, empresa=apple)
+juan = Programador(nombre='Juan', edad=22, empresa=apple)
+jose = Programador(nombre='Jose', edad=25, empresa=twitter)
+edgar = Programador(nombre='Edgar', edad=26, empresa=twitter)
+mark = Programador(nombre='Mark', edad=26, empresa=facebook)
+venus = Programador(nombre='Venus', edad=28, empresa=snapchat)
+sol = Programador(nombre='Sol', edad=28, empresa=snapchat)
+andrea = Programador(nombre='Andrea', edad=29, empresa=yahoo)
+cardi = Programador(nombre='Cardi', edad=23, empresa=amazon)
+maria = Programador(nombre='Maria', edad=23, empresa=google)
+joel = Programador(nombre='Joel', edad=24, empresa=google)
+salman = Programador(nombre='Salman', edad=25, empresa=google)
+tabata = Programador(nombre='Tabata', edad=27, empresa=ebay)
+
+
+
+db.session.add(john)
+db.session.add(juan)
+db.session.add(jose)
+db.session.add(edgar)
+db.session.add(mark)
+db.session.add(venus)
+db.session.add(sol)
+db.session.add(andrea)
+db.session.add(cardi)
+db.session.add(maria)
+db.session.add(joel)
+db.session.add(salman)
+db.session.add(tabata)
+
+
+
+db.session.commit()
